@@ -548,7 +548,7 @@ p {
 }
 
 .contact-form {
-   padding: 60px 80px 60px 80px;
+   padding: 60px 80px;
    background-color: #3f4466;
    min-height: 600px;
 }
@@ -650,6 +650,12 @@ button:focus {
    background-color: #0b0f25;
 }
 
+.footer-bottom .social-menu span {
+   font-size: 25px;
+   color: #fff;
+   padding-left: 20px;
+}
+
 .menu-bottom li {
    color: #fff;
    display: flex;
@@ -677,7 +683,7 @@ button:focus {
    overflow: hidden;
    background-size: cover !important;
    background-repeat: no-repeat;
-   height: 70vh;
+   height: 85vh;
    width: 100%;
    z-index: 1;
    color: #fff;
@@ -685,6 +691,10 @@ button:focus {
    display: flex;
    align-items: center;
    gap: 25px;
+}
+
+.inner-title-desc p {
+   margin-bottom: 0;
 }
 
 .inner-bg-overlay {
@@ -890,6 +900,25 @@ button:focus {
    margin-bottom: 20px;
 }
 
+.list-bottom-border li {
+   position: relative;
+}
+
+.list-bottom-border li span {
+   color: #404567;
+}
+
+.list-bottom-border li::after {
+   content: '';
+   position: absolute;
+   width: 1px;
+   background-color: #404567;
+   height: 100%;
+   left: 8px;
+   top: 20px;
+   bottom: 0px;
+}
+
 .casestudy-list .btn {
    color: #fff;
    background-color: #0070ba;
@@ -1006,6 +1035,112 @@ button:focus {
 .solutions-counter .counterup {
    font-size: 45px;
 }
+
+.icon-list-box i {
+   font-size: 38px;
+}
+
+.faq .accordion-button {
+   padding: 26px 10px 26px 26px;
+   transition: all 0.2s ease-out;
+   margin: 0;
+   background-color: #fff;
+   background-color: #f6f6f6;
+   border-bottom: 1px solid #ebebeb;
+   font-size: 22px;
+   font-weight: 500;
+}
+
+.faq .accordion-button:hover {
+   background-color: #0374ea;
+}
+
+.faq .accordion-button:not(.collapsed) {
+   color: #404567;
+}
+
+/* responsive */
+
+@media (max-width: 576px) {
+   .section-head-gray,
+   .head-h1,
+   .section-head,
+   .inner-title-head {
+      font-size: 30px;
+   }
+   .footer-accordion,
+   .casestudy-box,
+   .flip-container,
+   .icon-column {
+      margin-bottom: 30px;
+   }
+   .contact-form {
+      padding: 50px 25px;
+   }
+   .footer .logo-footer img {
+      width: 50%;
+   }
+   .logo-footer {
+      display: flex;
+      justify-content: center;
+   }
+   .navbar-brand {
+      width: 40%;
+   }
+   .menu-bottom ul {
+      flex-direction: column;
+   }
+   .social-menu {
+      align-items: center;
+      display: flex;
+   }
+   .center-banner {
+      flex-direction: column;
+   }
+   .section-head-gray {
+      margin-bottom: 50px;
+   }
+   .carousel-caption h5 {
+      font-size: 35px;
+      line-height: 45px;
+   }
+   .carousel-caption {
+      right: 0;
+   }
+   .location-tab .nav-tabs .nav-link {
+      padding: 13px 30px;
+   }
+   .features-box svg {
+      width: 100%;
+   }
+   .solutions-counter .icon-column,
+   .count-wrapper {
+      text-align: center;
+   }
+   .inner-banner {
+      height: 100vh;
+   }
+   .shadow-inner {
+      padding: 40px 15px 20px 15px;
+   }
+   .casestudy-list .casestudy-content h5 {
+      font-size: 22px;
+   }
+   .contact-us .contact-form {
+      padding: 100px 20px 25px;
+   }
+   .navbar-collapse {
+      background: #404567;
+   }
+   .navbar.sticky .navbar-collapse {
+      background-color: #fff;
+   }
+   .navbar-toggler-icon {
+      height: 1.1em;
+      background: rgb(255, 255, 255, 0.5);
+      border-radius: 0.2rem;
+   }
+}
 @media (min-width: 992px) {
    .navbar-expand-lg .navbar-collapse {
       display: flex !important;
@@ -1026,5 +1161,8 @@ button:focus {
    }
    .navbar .dropdown:hover > .dropdown-menu {
       display: block;
+   }
+   .inner-title {
+      width: 60%;
    }
 }
