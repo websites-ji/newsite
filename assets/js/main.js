@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
             items: 2
          },
          1170: {
-            items: 8
+            items: 6
          }
       }
    });
