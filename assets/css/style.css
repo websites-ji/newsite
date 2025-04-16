@@ -96,6 +96,7 @@ p {
    margin-left: 0;
    border-top: transparent;
 }
+
 .navbar-nav .nav-link::after {
    content: '';
    display: block;
@@ -108,6 +109,10 @@ p {
    transform: scaleX(0);
    transform-origin: left;
    transition: transform 0.2s ease-out;
+}
+
+.sticky .navbar-nav .nav-link::after {
+   background-color: #8b19bd;
 }
 
 .navbar-expand-lg.sticky .navbar-nav .nav-link {
@@ -689,6 +694,23 @@ button:focus {
 .footer-accordion .accordion-item {
    background-color: transparent;
    border-bottom: 1px solid #262831;
+}
+.menu-bottom li a,
+.footermenu a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #fff;
+   transition: all 0.3s ease;
+}
+.social-menu a svg {
+   transition: all 0.3s ease;
+}
+
+.social-menu a:hover svg,
+.menu-bottom li a:hover,
+.footermenu a:hover {
+   color: #8b18bd;
 }
 
 .inner-banner {
