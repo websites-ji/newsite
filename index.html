@@ -1732,13 +1732,26 @@
 
                const button = document.getElementById('messagebutton');
                button.innerHTML = 'Message Sent <span class="ps-1 rotate-icon"><i class="fa-solid fa-check"></i></span>';
-               button.style.color = 'green'; // changes the text color
+               button.style.color = 'green'; 
+               setTimeout(function() {
+               console.log("This runs after 2 seconds");
+               document.getElementById('contact-form').reset();
+               }, 1000);
+               
+               setTimeout(function() {
+               console.log("This runs after 2 seconds");
+               button.innerHTML = 'Send<span class="ps-1 rotate-icon"><i class="fa-solid fa-arrow-up"></i>';
+                  button.style.color = 'black';
+               }, 1500);
+               
+
               console.log('SUCCESS!');
             }, (error) => {
                const button = document.getElementById('messagebutton');
                button.innerHTML = 'Message failed to Sent <span class="ps-1 rotate-icon"><i class="fa-solid fa-check"></i></span>';
                button.style.color = 'red'; // changes the text color
               console.log('FAILED...', error);
+              document.getElementById('contact-form').reset();
             });
         });
       });

@@ -342,69 +342,70 @@
                         representative will contact you shortly after receiving
                         your request.
                      </p>
-                     <form id="contact-form"></form>
-                     <div class="form mt-5">
-                        <div class="col-lg-6">
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Full Name"
-                              name="name" required
-                            />
-                        </div>
-                        <div class="col-lg-6">
-                           <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Email"
-                              name="email" required
-                           />
-                        </div>
-                     </div>
-                     
-                     <div class="row">
-                        <div class="col-12">
-                           <textarea
-                              class="form-control"
-                              rows="4"
-                              placeholder="Your Mesage"
-                              name="message" required
-                           ></textarea>
-                        </div>
-                        <div class="col-12">
-                           <div class="form-check">
-                              <input
-                                 class="form-check-input"
-                                 type="checkbox"
-                                 value=""
-                                 id="flexCheckDefault"
-                                 required
-                              />
-                              <label
-                                 class="form-check-label text-white"
-                                 for="flexCheckDefault"
-                              >
-                                    I consent to Terns processing my personal
-                                    information as set out in the Privacy Policy
-                                    and Cookie Policy and that, given the global
-                                    nature of Terns’s business, such processing
-                                    may take place outside of my home
-                                    jurisdiction.
-                                 </label>
+                     <form id="contact-form">
+                        <div class="form mt-5">
+                           <div class="row g-4">
+                              <div class="col-lg-6">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Full Name"
+                                    name="name" required
+                                 />
                               </div>
-                              <button id="messagebutton"
-                                 type="button"
-                                 class="btn btn-rounded-outline bg-white mt-5"
-                              >
-                                 Send<span class="ps-1 rotate-icon"
-                                    ><i class="fa-solid fa-arrow-up"></i
-                                 ></span>
-                              </button>
+                              <div class="col-lg-6">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    name="email" required
+                                 />
+                              </div>
+                           </div>
+                     
+                           <div class="row">
+                              <div class="col-12">
+                                 <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Your Message"
+                                    name="message" required
+                                 ></textarea>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-check">
+                                    <input
+                                       class="form-check-input"
+                                       type="checkbox"
+                                       value=""
+                                       id="flexCheckDefault"
+                                       required
+                                    />
+                                    <label
+                                       class="form-check-label text-white"
+                                       for="flexCheckDefault"
+                                    >
+                                    I consent to Terns processing my personal
+                                    information as outlined in the Privacy
+                                    Policy and Cookie Policy. I understand that,
+                                    due to the global reach of Terns, this
+                                    processing may occur outside of my home
+                                    jurisdiction.
+                                    </label>
+                                 </div>
+                     
+                                 <button id="messagebutton"
+                                    type="submit"
+                                    class="btn btn-rounded-outline bg-white mt-5"
+                                 >
+                                    Send<span class="ps-1 rotate-icon">
+                                    <i class="fa-solid fa-arrow-up"></i></span>
+                                 </button>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                  </form>
-
+                     </form>
+                     
                   </div>
                </div>
             </div>
@@ -1063,13 +1064,26 @@
 
                const button = document.getElementById('messagebutton');
                button.innerHTML = 'Message Sent <span class="ps-1 rotate-icon"><i class="fa-solid fa-check"></i></span>';
-               button.style.color = 'green'; // changes the text color
+               button.style.color = 'green'; 
+               setTimeout(function() {
+               console.log("This runs after 2 seconds");
+               document.getElementById('contact-form').reset();
+               }, 1000);
+               
+               setTimeout(function() {
+               console.log("This runs after 2 seconds");
+               button.innerHTML = 'Send<span class="ps-1 rotate-icon"><i class="fa-solid fa-arrow-up"></i>';
+                  button.style.color = 'black';
+               }, 1500);
+               
+
               console.log('SUCCESS!');
             }, (error) => {
                const button = document.getElementById('messagebutton');
                button.innerHTML = 'Message failed to Sent <span class="ps-1 rotate-icon"><i class="fa-solid fa-check"></i></span>';
                button.style.color = 'red'; // changes the text color
               console.log('FAILED...', error);
+              document.getElementById('contact-form').reset();
             });
         });
       });
