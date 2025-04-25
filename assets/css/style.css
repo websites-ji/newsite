@@ -39,7 +39,7 @@ p {
     color: #f3b01b
 }
 
-.fade-pink {
+.fade-purple {
     color: #8b18bd;
 }
 
@@ -151,7 +151,7 @@ p {
 }
 
 .section-head-gray {
-   color: #404567;
+   color: #2a023b;
    font-size: 42px;
    line-height: 1.23em;
    font-weight: 400;
@@ -490,7 +490,7 @@ p {
 }
 
 .customer-logos {
-   border-bottom: 1px solid #e2e2e2;
+   border-bottom: 1px solid #adadad;
 }
 
 .fixed-banner {
@@ -578,7 +578,7 @@ p {
 
 .contact-form {
    padding: 60px 80px;
-   background-color: #3f4466;
+   background-color: #212529;
    min-height: 600px;
 }
 
@@ -647,7 +647,7 @@ button:focus {
    align-items: center;
 }
 .location-tab .nav-tabs .nav-link.active {
-   background: #009cde;
+   background: #f3b01b;
    color: #fff;
 }
 .listing-places li span {
@@ -655,7 +655,7 @@ button:focus {
 }
 
 .footer {
-   background-color: #05081a;
+   background-color: #180121;
    font-family: 'Exo', sans-serif;
 }
 
@@ -676,7 +676,7 @@ button:focus {
    align-items: center;
 }
 .footer-bottom {
-   background-color: #0b0f25;
+   background-color: #f3b01b;
 }
 
 .footer-bottom .social-menu span {
