@@ -35,8 +35,12 @@ p {
    color: #85979b;
 }
 
+.fade-pink {
+    color: #8b18bd;
+}
+
 .bg-darkgray {
-   background-color: #404567;
+    background-color: #27282f;
 }
 
 .light-theme-bg {
@@ -47,8 +51,8 @@ p {
    border-bottom: 1px solid #111;
 }
 .head-h1 {
-   font-size: 56px;
-   color: #404567;
+    font-size: 56px;
+    color: #313340;
 }
 
 .nav-item {
@@ -160,7 +164,7 @@ p {
 }
 
 .gray-dark {
-   background-color: #404567;
+    background-color: #212529;
 }
 
 .btn-dark {
@@ -426,27 +430,27 @@ p {
 }
 
 .flip-card-front {
-   z-index: 2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: transparent;
-   padding: 60px 30px 30px 30px;
-   justify-content: flex-end;
-   background-image: radial-gradient(at top left, #0070ba 20%, #009cde 100%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 60px 30px 30px 30px;
+    justify-content: flex-end;
+    background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
 }
 
 .flip-card-back {
-   background-color: transparent;
-   padding: 60px 30px 30px 30px;
-   justify-content: flex-end;
-   background-image: radial-gradient(at top left, #0070ba 20%, #009cde 100%);
-   color: white;
-   transform: rotateY(180deg);
-   z-index: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-color: transparent;
+    padding: 60px 30px 30px 30px;
+    justify-content: flex-end;
+    background-image: radial-gradient(at top left, #d7ba89 20%, #a77f3c 100%);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flipmenu {
@@ -778,9 +782,9 @@ button:focus {
    margin-bottom: 0;
 }
 
-.white-box.link-box {
-   background-image: linear-gradient(180deg, #0070ba 0%, #009cde 100%);
-}
+    .white-box.link-box {
+        background-image: linear-gradient(180deg, #8b18bd 0%, #610589 100%);
+    }
 
 .link-box h1 {
    color: #fff;
