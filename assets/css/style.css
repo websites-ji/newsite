@@ -35,6 +35,10 @@ p {
    color: #85979b;
 }
 
+.fade-yellow {
+    color: #f3b01b
+}
+
 .fade-pink {
     color: #8b18bd;
 }
@@ -54,7 +58,10 @@ p {
     font-size: 56px;
     color: #313340;
 }
-
+.head-h1-yellow {
+    font-size: 56px;
+    color: #f3b01b;
+}
 .nav-item {
    margin: 0 21px;
 }
@@ -215,11 +222,11 @@ p {
    color: rgb(32, 40, 45);
 }
 
-.btn-rounded-outline:hover {
-   color: #fff;
-   background-color: #223035;
-   border: 1px solid #223035;
-}
+    .btn-rounded-outline:hover {
+        color: #fff;
+        background-color: #8b18bd;
+        border: 1px solid #fff;
+    }
 
 .rotate-icon {
    transform: rotate(40deg);
@@ -444,7 +451,7 @@ p {
     background-color: transparent;
     padding: 60px 30px 30px 30px;
     justify-content: flex-end;
-    background-image: radial-gradient(at top left, #d7ba89 20%, #a77f3c 100%);
+    background-image: radial-gradient(at top left, #f3b01b 20%, #b88106 100%);
     color: white;
     transform: rotateY(180deg);
     z-index: 1;
