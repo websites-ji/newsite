@@ -35,8 +35,16 @@ p {
    color: #85979b;
 }
 
+.fade-yellow {
+    color: #f3b01b
+}
+
+.fade-purple {
+    color: #8b18bd;
+}
+
 .bg-darkgray {
-   background-color: #404567;
+    background-color: #27282f;
 }
 
 .light-theme-bg {
@@ -47,10 +55,13 @@ p {
    border-bottom: 1px solid #111;
 }
 .head-h1 {
-   font-size: 56px;
-   color: #404567;
+    font-size: 56px;
+    color: #313340;
 }
-
+.head-h1-yellow {
+    font-size: 56px;
+    color: #f3b01b;
+}
 .nav-item {
    margin: 0 21px;
 }
@@ -140,7 +151,7 @@ p {
 }
 
 .section-head-gray {
-   color: #404567;
+   color: #2a023b;
    font-size: 42px;
    line-height: 1.23em;
    font-weight: 400;
@@ -160,7 +171,7 @@ p {
 }
 
 .gray-dark {
-   background-color: #404567;
+    background-color: #212529;
 }
 
 .btn-dark {
@@ -211,11 +222,11 @@ p {
    color: rgb(32, 40, 45);
 }
 
-.btn-rounded-outline:hover {
-   color: #fff;
-   background-color: #223035;
-   border: 1px solid #223035;
-}
+    .btn-rounded-outline:hover {
+        color: #fff;
+        background-color: #8b18bd;
+        border: 1px solid #fff;
+    }
 
 .rotate-icon {
    transform: rotate(40deg);
@@ -426,27 +437,27 @@ p {
 }
 
 .flip-card-front {
-   z-index: 2;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: transparent;
-   padding: 60px 30px 30px 30px;
-   justify-content: flex-end;
-   background-image: radial-gradient(at top left, #0070ba 20%, #009cde 100%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 60px 30px 30px 30px;
+    justify-content: flex-end;
+    background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
 }
 
 .flip-card-back {
-   background-color: transparent;
-   padding: 60px 30px 30px 30px;
-   justify-content: flex-end;
-   background-image: radial-gradient(at top left, #0070ba 20%, #009cde 100%);
-   color: white;
-   transform: rotateY(180deg);
-   z-index: 1;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    background-color: transparent;
+    padding: 60px 30px 30px 30px;
+    justify-content: flex-end;
+    background-image: radial-gradient(at top left, #f3b01b 20%, #b88106 100%);
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flipmenu {
@@ -479,7 +490,7 @@ p {
 }
 
 .customer-logos {
-   border-bottom: 1px solid #e2e2e2;
+   border-bottom: 1px solid #adadad;
 }
 
 .fixed-banner {
@@ -567,7 +578,7 @@ p {
 
 .contact-form {
    padding: 60px 80px;
-   background-color: #3f4466;
+   background-color: #212529;
    min-height: 600px;
 }
 
@@ -636,7 +647,7 @@ button:focus {
    align-items: center;
 }
 .location-tab .nav-tabs .nav-link.active {
-   background: #009cde;
+   background: #f3b01b;
    color: #fff;
 }
 .listing-places li span {
@@ -644,7 +655,7 @@ button:focus {
 }
 
 .footer {
-   background-color: #05081a;
+   background-color: #180121;
    font-family: 'Exo', sans-serif;
 }
 
@@ -665,7 +676,7 @@ button:focus {
    align-items: center;
 }
 .footer-bottom {
-   background-color: #0b0f25;
+   background-color: #f3b01b;
 }
 
 .footer-bottom .social-menu span {
@@ -778,9 +789,9 @@ button:focus {
    margin-bottom: 0;
 }
 
-.white-box.link-box {
-   background-image: linear-gradient(180deg, #0070ba 0%, #009cde 100%);
-}
+    .white-box.link-box {
+        background-image: linear-gradient(180deg, #8b18bd 0%, #610589 100%);
+    }
 
 .link-box h1 {
    color: #fff;
