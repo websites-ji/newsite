@@ -713,6 +713,7 @@ button:focus {
 
 .footer-accordion .accordion-button:hover {
    border: 1px solid #8b18bd;
+   color: #fff;
    background: #8b18bd url(../images/gradient-bg.png) 50% 50% repeat-x;
 }
 
