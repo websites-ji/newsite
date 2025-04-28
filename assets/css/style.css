@@ -36,15 +36,19 @@ p {
 }
 
 .fade-yellow {
-    color: #f3b01b
+   color: #f3b01b;
 }
 
 .fade-purple {
-    color: #8b18bd;
+   color: #8b18bd;
+}
+
+.bg-purple {
+   background-color: #180121;
 }
 
 .bg-darkgray {
-    background-color: #27282f;
+   background-color: #27282f;
 }
 
 .light-theme-bg {
@@ -54,14 +58,21 @@ p {
 .border-bottom-black {
    border-bottom: 1px solid #111;
 }
+
 .head-h1 {
-    font-size: 56px;
-    color: #313340;
+   font-size: 56px;
+   color: #313340;
 }
+
 .head-h1-yellow {
-    font-size: 56px;
-    color: #f3b01b;
+   font-size: 56px;
+   color: #f3b01b;
 }
+
+.main-title-head h1 {
+   color: #404567;
+}
+
 .nav-item {
    margin: 0 21px;
 }
@@ -171,7 +182,7 @@ p {
 }
 
 .gray-dark {
-    background-color: #212529;
+   background-color: #212529;
 }
 
 .btn-dark {
@@ -210,6 +221,7 @@ p {
    background-color: rgba(255, 255, 255, 0.2);
    -webkit-backdrop-filter: blur(4px) brightness(100%);
    backdrop-filter: blur(4px) brightness(100%);
+   padding: 10px 45px 11px;
 }
 
 .btn-round:hover {
@@ -222,11 +234,11 @@ p {
    color: rgb(32, 40, 45);
 }
 
-    .btn-rounded-outline:hover {
-        color: #fff;
-        background-color: #8b18bd;
-        border: 1px solid #fff;
-    }
+.btn-rounded-outline:hover {
+   color: #fff;
+   background-color: #8b18bd;
+   border: 1px solid #fff;
+}
 
 .rotate-icon {
    transform: rotate(40deg);
@@ -437,27 +449,27 @@ p {
 }
 
 .flip-card-front {
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    padding: 60px 30px 30px 30px;
-    justify-content: flex-end;
-    background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+   padding: 60px 30px 30px 30px;
+   justify-content: flex-end;
+   background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
 }
 
 .flip-card-back {
-    background-color: transparent;
-    padding: 60px 30px 30px 30px;
-    justify-content: flex-end;
-    background-image: radial-gradient(at top left, #f3b01b 20%, #b88106 100%);
-    color: white;
-    transform: rotateY(180deg);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   background-color: transparent;
+   padding: 60px 30px 30px 30px;
+   justify-content: flex-end;
+   background-image: radial-gradient(at top left, #f3b01b 20%, #b88106 100%);
+   color: white;
+   transform: rotateY(180deg);
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .flipmenu {
@@ -589,6 +601,7 @@ p {
    border-right: transparent;
    border-radius: 0;
    margin-bottom: 30px;
+   color: #fff;
 }
 
 input {
@@ -645,6 +658,7 @@ button:focus {
    display: flex;
    justify-content: center;
    align-items: center;
+   flex: 0 0 auto;
 }
 .location-tab .nav-tabs .nav-link.active {
    background: #f3b01b;
@@ -774,7 +788,7 @@ button:focus {
 
 .white-box {
    background-color: #f4f9fd;
-   min-height: 270px;
+   min-height: 294px;
    justify-content: flex-start;
    text-align: left;
    position: relative;
@@ -789,9 +803,9 @@ button:focus {
    margin-bottom: 0;
 }
 
-    .white-box.link-box {
-        background-image: linear-gradient(180deg, #8b18bd 0%, #610589 100%);
-    }
+.white-box.link-box {
+   background-image: linear-gradient(180deg, #8b18bd 0%, #610589 100%);
+}
 
 .link-box h1 {
    color: #fff;
@@ -1110,6 +1124,118 @@ button:focus {
    color: #404567;
 }
 
+.icon-top i {
+   font-size: 45px;
+   color: #85979b;
+   padding-right: 20px;
+}
+
+.qa-process .accordion-button,
+.qa-process .accordion-item {
+   background: transparent;
+}
+
+.qa-process .accordion-item {
+   border-top: transparent;
+   border-left: transparent;
+   border-right: transparent;
+   border-bottom: 1px solid #20282d;
+}
+
+.qa-process .accordion-button {
+   padding: 1.5rem 0;
+   font-weight: 600;
+}
+
+.qa-process .accordion-button:not(.collapsed) {
+   color: inherit;
+}
+
+.table-customize table th {
+   background-color: #3f4466;
+   color: #fff;
+}
+
+.table-customize table p {
+   margin-bottom: 0;
+   padding: 5px 20px;
+}
+
+.white-box-list li {
+   padding-bottom: 10px;
+}
+
+.white-box-list li:last-child {
+   padding-bottom: 0;
+}
+
+.white-box-list ul {
+   padding-left: 1rem;
+}
+
+.accordion-no-bg .accordion-body p,
+.accordion-no-bg .accordion-button {
+   color: white;
+}
+
+.accordion-no-bg .accordion-item {
+   border-bottom: 1px solid #fff;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+   border-bottom-right-radius: 0rem;
+   border-bottom-left-radius: 0rem;
+}
+
+.accordion-item:last-of-type {
+   border-bottom-right-radius: 0rem;
+   border-bottom-left-radius: 0rem;
+}
+
+.icon-block .icon-holder {
+   flex: 0 0 auto;
+}
+
+.icon-block .icon-holder::after {
+   content: none;
+}
+
+.icon-line-bottom .icon-title-border {
+   position: relative;
+}
+
+.icon-line-bottom .icon-holder::after {
+   content: none;
+   position: absolute;
+   background-color: #111;
+   width: 60px;
+   height: 1px;
+   left: 50px;
+   bottom: -11px;
+}
+
+.icon-line-bottom .icon-title-border p::after {
+   content: '';
+   position: absolute;
+   background-color: #111;
+   width: 60px;
+   height: 1px;
+   left: 45px;
+   bottom: -8px;
+}
+
+.accordion-advt .accordion-button:not(.collapsed) {
+   color: #212529;
+}
+
+.accordion-advt .accordion-button:hover {
+   background-color: #e7f1ff;
+}
+
+.logo-list .logo-box {
+   background-color: #fff;
+   border: 1px solid #eaeaea;
+}
 /* responsive */
 
 @media (max-width: 576px) {
