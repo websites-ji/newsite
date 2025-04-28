@@ -182,7 +182,7 @@ p {
    font-size: 20px;
    line-height: 1.5em;
    font-weight: 500;
-   color: #404567;
+   color: #8b19bd;
 }
 
 .btn {
@@ -647,11 +647,11 @@ button:focus {
    align-items: center;
 }
 .location-tab .nav-tabs .nav-link.active {
-   background: #f3b01b;
+   background: #8b18bd;
    color: #fff;
 }
 .listing-places li span {
-   color: #0c72ba;
+   color: #8b18bd;
 }
 
 .footer {
@@ -676,7 +676,7 @@ button:focus {
    align-items: center;
 }
 .footer-bottom {
-   background-color: #f3b01b;
+   background-color: #0b0010;
 }
 
 .footer-bottom .social-menu span {
@@ -698,8 +698,8 @@ button:focus {
 }
 
 .footer-accordion .accordion-button:hover {
-   border: 1px solid #0073ea;
-   background: #0073ea url(../images/gradient-bg.png) 50% 50% repeat-x;
+   border: 1px solid #8b18bd;
+   background: #8b18bd url(../images/gradient-bg.png) 50% 50% repeat-x;
 }
 
 .footer-accordion .accordion-item {
@@ -1103,7 +1103,7 @@ button:focus {
 }
 
 .faq .accordion-button:hover {
-   background-color: #0374ea;
+   background-color: #8b18bd;
 }
 
 .faq .accordion-button:not(.collapsed) {
