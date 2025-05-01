@@ -461,7 +461,7 @@ p {
 
 .flip-card-back {
    background-color: transparent;
-   padding: 60px 30px 30px 30px;
+   padding: 50px 22px 30px 22px;
    justify-content: flex-end;
    background-image: radial-gradient(at top left, #f3b01b 20%, #b88106 100%);
    color: white;
@@ -475,10 +475,11 @@ p {
 .flipmenu {
    color: #ffffff;
    font-size: 16px;
+   padding-left: 1rem;
 }
 
 .flipmenu .menu-item {
-   padding-bottom: 7px;
+   padding-bottom: 0;
    padding-top: 7px;
    border-bottom: 1px solid #f5f5f5;
    list-style-type: none;
@@ -491,9 +492,15 @@ p {
 
 .flip-title h3 {
    padding: 0px 0px 20px 0px;
-   font-size: 32px;
+   font-size: 22px;
    line-height: 1.3em;
-   font-weight: 400;
+   font-weight: 500;
+}
+
+.flip-list .menu-item {
+   list-style-type: disc;
+   padding-top: 0;
+   border-bottom: transparent;
 }
 
 .customer-logos .slide img {
@@ -529,7 +536,7 @@ p {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top center;
-   padding: 25px;
+   padding: 25px 15px;
    position: relative;
    z-index: 2;
    padding-top: 100px;
@@ -549,11 +556,21 @@ p {
 .casestudy-box h5 {
    color: #fff;
    font-family: 'Exo', Sans-serif;
-   font-size: 25px;
+   font-size: 23px;
    line-height: 32px;
    text-align: left;
+   min-height: 65px;
 }
 
+.heading-height .casestudy-content h5 {
+   min-height: 125px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.form-check-label {
+   font-size: 14px;
+}
 .case-1 {
    background-image: url(../images/casestudy-1.jpg);
 }
@@ -570,10 +587,10 @@ p {
    background-image: url(../images/casestudy-4.jpg);
 }
 .round-small-btn {
-   font-size: 10px;
+   font-size: 11px;
    font-weight: 500;
-   line-height: 16px;
-   padding: 3px 11px 3px 11px;
+   line-height: 24px;
+   padding: 3px 11px !important;
    border-radius: 20px 20px 20px 20px;
 }
 
@@ -606,6 +623,10 @@ p {
 
 input {
    height: 50px;
+}
+
+.accordion-bg-padding .accordion-button {
+   padding: 1.5rem 2rem;
 }
 
 .accordion-button:focus,
@@ -785,6 +806,10 @@ button:focus {
 .about-count .counterup {
    font-size: 45px;
    display: inline-flex;
+}
+
+.white-box.white-box-list {
+   padding: 20px;
 }
 
 .white-box {
@@ -1155,6 +1180,7 @@ button:focus {
 .table-customize table th {
    background-color: #3f4466;
    color: #fff;
+   padding: 1rem 0.5rem;
 }
 
 .table-customize table p {
@@ -1236,6 +1262,47 @@ button:focus {
 .logo-list .logo-box {
    background-color: #fff;
    border: 1px solid #eaeaea;
+}
+
+.advantage-column .accordion-item,
+.advantage-column .accordion-button {
+   background-color: transparent;
+   color: #fff;
+}
+
+.advantage-column .accordion-item {
+   border-bottom: 1px solid #fff;
+}
+
+.advantage-column .accordion-item {
+   border-left: transparent;
+   border-right: transparent;
+   border-top: transparent;
+}
+
+.advantage-column .accordion-button:not(.collapsed) {
+   color: #ffffff;
+}
+
+.advantage-column .accordion-button:hover {
+   background-color: transparent;
+}
+
+.advantage-column .accordion-button:not(.collapsed) {
+   box-shadow: none;
+}
+
+.accordion-button {
+   padding: 1.5rem 0;
+}
+
+.advantage-column .accordion-button::after {
+   font-family: 'bootstrap-icons';
+   content: '\F282';
+}
+
+.advantage-column .accordion-button:not(.collapsed)::after {
+   background-image: none;
 }
 /* responsive */
 
