@@ -1317,6 +1317,19 @@ button:focus {
 .aws-solutions .value-box {
    min-height: 345px;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+   color: #fff;
+   text-decoration: none;
+   background-color: #8b18bd;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+   color: #fff;
+   background-color: #8b18bd;
+}
+
 /* responsive */
 
 @media (max-width: 576px) {
