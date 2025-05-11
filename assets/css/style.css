@@ -225,6 +225,11 @@ p {
 }
 
 .btn-round:hover {
+   background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
+   color: #fff !important;
+}
+
+.btn-round:hover {
    color: #fff;
 }
 
@@ -236,8 +241,8 @@ p {
 
 .btn-rounded-outline:hover {
    color: #fff;
-   background-color: #8b18bd;
-   border: 1px solid #fff;
+   background-image: radial-gradient(at top left, #8b18bd 20%, #3e0358 100%);
+   border: 1px solid transparent;
 }
 
 .rotate-icon {
