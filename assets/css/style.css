@@ -513,9 +513,9 @@ p {
    transition: all 1s;
 }
 
-.customer-logos {
+/* .customer-logos {
    border-bottom: 1px solid #adadad;
-}
+} */
 
 .fixed-banner {
    background-image: url(../images/fixed-banner.jpg);
@@ -1330,6 +1330,61 @@ button:focus {
    background-color: #8b18bd;
 }
 
+.min-h-box {
+   min-height: 210px;
+}
+
+.strategy-h-box {
+   min-height: 385px;
+}
+
+.t-head {
+   font-size: 25px;
+   line-height: 1.4em;
+   font-weight: 500;
+}
+
+.endpoint-tab .tab-pane {
+   background-color: rgba(255, 255, 255, 0.92);
+   padding: 50px 25px;
+}
+
+.endpoint-tab .nav-link {
+   background: #009cde;
+   color: #fff;
+   font-family: 'Exo', Sans-serif;
+   font-weight: 500;
+   padding: 25px;
+   border-radius: 0;
+   margin-right: 15px;
+}
+
+.endpoint-tab .nav-link:hover {
+   border: 1px solid transparent;
+}
+
+.endpoint-tab .icon-column .icon-holder:after {
+   content: none;
+}
+
+.endpoint-tab .icon-column .icon-title-border p {
+   position: relative;
+}
+
+.endpoint-tab .icon-column .icon-title-border p::after {
+   content: '';
+   width: 50px;
+   height: 1px;
+   background-color: #404567;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   margin-bottom: -12px;
+}
+
+.customer-logos .owl-nav {
+   display: none;
+}
 /* responsive */
 
 @media (max-width: 576px) {
